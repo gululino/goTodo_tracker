@@ -1,0 +1,767 @@
+{
+  "info": {
+    "name": "MOTO Transactions MSR 2025",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "MOTO Partial Auth 001 Sale VI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa Sale\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"4130904199999994\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"23017\",\n  \"transaction_amount\": \"28.06\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 003 Sale DI 9 Digit Zip",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Discover Sale\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"6011308355555559\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"58.08\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 005 Sale MC Partial Approval",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard Sale\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"2223000010005251\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"26058\",\n  \"transaction_amount\": \"54.42\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 007 Terminal Based Time Out Reversal MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard Transaction with Subsequent Time Out Reversal\",\n  \"transaction_type\": \"TERMINAL\",\n  \"card_number\": \"5472061111111118\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"28501\",\n  \"transaction_amount\": \"2222.17\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 007 Terminal Based Time Out Reversal MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard Transaction with Subsequent Time Out Reversal\",\n  \"transaction_type\": \"TERMINAL\",\n  \"card_number\": \"5472061111111118\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"2222.17\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 014 Known Reversal AX",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed AmericanExpress Transaction with Keyed Reversal\",\n  \"transaction_type\": \"KNOWN\",\n  \"card_number\": \"370000999999990\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"22601\",\n  \"transaction_amount\": \"3.05\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 014 Known Reversal AX",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed AmericanExpress Transaction with Keyed Reversal\",\n  \"transaction_type\": \"KNOWN\",\n  \"card_number\": \"370000999999990\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"3.05\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 023 Refund VI Partial Approval",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa with Subsequent Return\",\n  \"transaction_type\": \"REFUND\",\n  \"card_number\": \"4124939999999990\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 4124939999999990 for the amount of 87.95\\u003cbr /\\u003eStreet Address: 287 Ferry St\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"25901\",\n  \"transaction_amount\": \"87.95\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 023 Refund VI Partial Approval",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa with Subsequent Return\",\n  \"transaction_type\": \"REFUND\",\n  \"card_number\": \"4124939999999990\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"27\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 025 Refund DI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Discover with Subsequent Return\",\n  \"transaction_type\": \"REFUND\",\n  \"card_number\": \"6011308355555559\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"23138\",\n  \"transaction_amount\": \"60.04\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 025 Refund DI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Discover with Subsequent Return\",\n  \"transaction_type\": \"REFUND\",\n  \"card_number\": \"6011308355555559\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"60.04\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 044 Sale L2/L3 MC Purchasing",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard with L2/L3\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"5529050000000071\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 5529050000000071 for the amount of 30.00 with an 8% sales tax of 2.80. For a grand total of 32.80\\u003cbr /\\u003eStreet Address: 262 Plainfield Ave\\u0026nbsp;\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"23069\",\n  \"transaction_amount\": \"30.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 047 Sale L2/L3 AX Traditional",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed AmericanExpress with L2/L3\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"370000999999990\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 370000999999990 for the amount of 81.00 with an 8% sales tax of 6.48. For a grand total of 87.48.\\u003cbr /\\u003eStreet Address: 2773 Anthony Ave\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"26930\",\n  \"transaction_amount\": \"81.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 048 Sale L2/L3 VI Corporate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa with L2/L3\",\n  \"transaction_type\": \"SALE\",\n  \"card_number\": \"4124932222222223\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 4124932222222223 for the amount of 28.00 with an 8% sales tax of 2.24. For a grand total of 30.24.\\u003cbr /\\u003eStreet Address: 3044 Alpha Ave\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"22202\",\n  \"transaction_amount\": \"28.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 065 PAR Value DI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Discover with Response for PAR Value\",\n  \"transaction_type\": \"PAR\",\n  \"card_number\": \"6011308355555559\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"28570\",\n  \"transaction_amount\": \"88.40\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 074 Association Token DI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Discover Transaction\",\n  \"transaction_type\": \"ASSOCIATION\",\n  \"card_number\": \"6011308355555559\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"27744\",\n  \"transaction_amount\": \"39.17\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 076 Association Token MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard Transaction\",\n  \"transaction_type\": \"ASSOCIATION\",\n  \"card_number\": \"2223000010005251\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"29982\",\n  \"transaction_amount\": \"49.16\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 077 Account Verification VI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa Account Verification\",\n  \"transaction_type\": \"ACCOUNT\",\n  \"card_number\": \"4121630071281885\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"Zip Code:\",\n  \"zip\": \"23610\",\n  \"transaction_amount\": \"\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 101 Spend Qualifier Numeric Sale VI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa Sale\",\n  \"transaction_type\": \"SPEND\",\n  \"card_number\": \"4130904199999994\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 4130904199999994 for the amount of 20.20\\u003cbr /\\u003eStreet Address: 11 8th St\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"24072\",\n  \"transaction_amount\": \"20.20\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 102 Spend Qualifier Alphanumeric Sale VI",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Visa Sale\",\n  \"transaction_type\": \"SPEND\",\n  \"card_number\": \"4130904199999994\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 4130904199999994 for the amount of 40.85\\u003cbr /\\u003eStreet Address: 11 Minard Rd\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"29269\",\n  \"transaction_amount\": \"40.85\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 103 Transaction Link ID Sale MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard Sale\",\n  \"transaction_type\": \"TRANSACTION\",\n  \"card_number\": \"2223000010005251\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 2223000010005251 for the amount of 27.00\\u003cbr /\\u003eStreet Address: 287 SW Hill Dr\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"27396\",\n  \"transaction_amount\": \"27.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 104 Transaction Link ID Refund MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard with Subsequent Return\",\n  \"transaction_type\": \"TRANSACTION\",\n  \"card_number\": \"5529050000000071\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\\u003cp\\u003eKey in PAN: 5529050000000071 for the amount of 82.00\\u003cbr /\\u003eStreet Address: 46 Gentry Rd\\u003cbr /\\u003eZip Code:\",\n  \"zip\": \"28337\",\n  \"transaction_amount\": \"82.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MOTO Partial Auth 104 Transaction Link ID Refund MC",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "visid_incap_160084=OK3WHDo6R6mql8ohx90bVl2FnGgAAAAAQUIPAAAAAABU07PbvRBbnZ6fmiWBlhJx; visid_incap_168247=bv3+G+0XR0OFCvnukXSZ9+ZfvGcAAAAAQUIPAAAAAAD1vIz3x6+ww1KX9LAUz4B6"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"transaction_description\": \"Keyed Mastercard with Subsequent Return\",\n  \"transaction_type\": \"TRANSACTION\",\n  \"card_number\": \"5529050000000071\",\n  \"card_expiration\": \"1230\",\n  \"card_verification\": \"1234\",\n  \"street_address1\": \"\",\n  \"zip\": \"\",\n  \"transaction_amount\": \"82.00\",\n  \"tender_type\": \"CARD\",\n  \"final_authorization\": 1,\n  \"account_id\": \"184572907838\",\n  \"api_accesskey\": \"1234566789012\",\n  \"response_format\": \"JSON\"\n}"
+        },
+        "url": {
+          "raw": "https://tul-pc-dev-mjoseph-21.cardconex.local/api/qsapi/3.8",
+          "host": [
+            "cert",
+            "payconex",
+            "net"
+          ],
+          "path": [
+            "api",
+            "qsapi",
+            "3.8"
+          ]
+        }
+      }
+    }
+  ]
+}
